@@ -1,6 +1,10 @@
 #ifndef MAKIMA_COMMON_HPP
 #define MAKIMA_COMMON_HPP
 
+#ifndef __ARM_NEON
+static_assert(false && "unsupported platform (sorry)")
+#endif
+
 #define MAKIMA_INLINE __attribute__((always_inline))
 
 #define MAKIMA_PAGESIZE 8096

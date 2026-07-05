@@ -1,8 +1,6 @@
 #ifndef MAKIMA_TYPE_HPP
 #define MAKIMA_TYPE_HPP
 
-#ifdef __ARM_NEON
-
 #include <arm_neon.h>
 
 #include <span>
@@ -21,10 +19,8 @@ struct alignas(16) vec4x32
 {
     float32x4_t _dont_use_directly;
 };
+
+// std::bit_cast ???
 } // namespace makima
-
-#else
-
-#endif
 
 #endif
