@@ -1,2 +1,9 @@
 # makima
-math library
+
+std140 for shaders
+
+VK_KHR_shader_float16_int8
+VK_KHR_16bit_storage
+
+## Types
+* 
