@@ -33,6 +33,10 @@ MAKIMA_INLINE void foreach (std::span< T > _data, F && _func) noexcept
         _func(_data + i);
     }
 }
+
+// sort
+// stable_sort
+// partition
 } // namespace makima
 
 #endif

@@ -1,0 +1,6 @@
+[submodule "kochou"]
+	path = kochou
+	url = https://github.com/kochou-framework/kochou.git
+[submodule "ktl"]
+	path = ktl
+	url = https://github.com/kochou-framework/ktl.git

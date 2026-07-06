@@ -15,6 +15,7 @@ batch_init(std::span< f16 > _src, std::span< vec4x16 > _dst)
     // что то будет
 }
 
+// BASE
 // approx_sin
 // approx_cos
 // approx_tan
@@ -23,6 +24,19 @@ batch_init(std::span< f16 > _src, std::span< vec4x16 > _dst)
 // batch_approx_cos
 // batch_approx_tan
 // batch_approx_ctg
+
+// VEC
+// dot
+// cross
+// lenght
+// distance
+// normalize
+// normalize
+// reflect
+// refract
+// faceforward
+
+// MAT
 } // namespace makima
 
 #endif

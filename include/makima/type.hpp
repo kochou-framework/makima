@@ -20,6 +20,16 @@ struct alignas(16) vec4x32
     float32x4_t _dont_use_directly;
 };
 
+struct alignas(8) mat4x16
+{
+    vec4x16 _dont_use_directly[4];
+};
+
+struct alignas(16) mat4x32
+{
+    float32x4x4_t _dont_use_directly;
+};
+
 // std::bit_cast ???
 } // namespace makima
 
