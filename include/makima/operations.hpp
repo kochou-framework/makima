@@ -8,8 +8,9 @@
 
 namespace makima
 {
-void
-batch_init(std::span< f16 > _src, std::span< vec4x16 > _dst)
+template < on_leash_type LHS, on_leash_type RHS >
+MAKIMA_INLINE void
+batch_init(std::span< LHS > _src, std::span< RHS > _dst) noexcept
 {
     MAKIMA_VALIDATE(src.size() / 4 > _dst.size());
     // что то будет
@@ -37,6 +38,7 @@ batch_init(std::span< f16 > _src, std::span< vec4x16 > _dst)
 // faceforward
 
 // MAT
+
 } // namespace makima
 
 #endif
